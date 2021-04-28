@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Identity.Client
+    versions:
+    - 4.27.0
+    - 4.28.0
+    - 4.28.1
+    - 4.29.0
+    - 4.30.0
+  - dependency-name: Microsoft.Graph
+    versions:
+    - 3.27.0
+    - 3.28.0
+    - 3.29.0
+  - dependency-name: NUnit
+    versions:
+    - 3.13.1
+  - dependency-name: Microsoft.NET.Test.Sdk
+    versions:
+    - 16.9.1
+  - dependency-name: MailKit
+    versions:
+    - 2.11.0
+  - dependency-name: Sendgrid
+    versions:
+    - 9.22.0
